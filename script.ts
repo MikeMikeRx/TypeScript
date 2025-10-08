@@ -1,41 +1,22 @@
-/* Real estate agency and client array
-To the following object:
+// Tuples
 
-const house = {
-    windows: 4,
-    doors: 1,
-    color: "white",
-    height: 50,
-    isNew: true,
-    garage: true
+const array: string[] = ["Mike", "Dave", "Tom"]
+const tuples: [string, number, number, boolean]= ["Mike", 10, 8, true]
+
+const employee: {
+    name: string,
+    age: number,
+    hobbies: string[],
+    department: [number, string]
+} = {
+    name: "Mike",
+    age: 28,
+    hobbies: ["sport", "coding", "programming"],
+    department: [2, "software developer"]
 }
 
-You have to add two arrays.
+console.log(employee.department[0]);
+console.log(employee.department[1]);
 
-The first one will be called vipClients and will contain the companies that are interested in the house. The companies will be Build-store, Damage-do, Bum-bum-company.
-
-The second array will be the interested people from among ordinary people. The interested people are Dean Builder, Peter Windowman and Cate Floor.
-
-Next, you have to write the first and last of both arrays to the console.*/
-
-const vipClients = ["Build-store", "Damage-do", "Bum-bum-company"]
-
-const clients = ["Dean Builder", "Peter Windowman", "Cate Floor"]
-
-const house = {
-    windows: 4,
-    doors: 1,
-    color: "white",
-    height: 50,
-    isNew: true,
-    garage: true,
-    vipClients,
-    clients
-}
-
-console.log(house.vipClients[0]);
-console.log(house.vipClients[2]);
-
-console.log(house.clients[0]);
-console.log(house.clients[2]);
-
+for(const department of employee.department){
+console.log(department)}
