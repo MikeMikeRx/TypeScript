@@ -1,8 +1,12 @@
-function sum(num1:number, num2:number){
-    return num1 + num2
-}
+//Basic data types
 
-const result = sum(5,6)
+/*
+    number
+    string
+    boolean
+*/ 
 
-console.log(result);
-
+const myName: string = "Mike"
+const age: number = 28
+const adult: boolean = true
+console.log(myName);

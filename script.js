@@ -1,5 +1,10 @@
-function sum(num1, num2) {
-    return num1 + num2;
-}
-var result = sum(5, 6);
-console.log(result);
+//Basic data types
+/*
+    number
+    string
+    boolean
+*/
+var myName = "Mike";
+var age = 28;
+var adult = true;
+console.log(myName);
