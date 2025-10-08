@@ -1,22 +1,24 @@
-// Tuples
+/* Real Estate Agent House Area
 
-const array: string[] = ["Mike", "Dave", "Tom"]
-const tuples: [string, number, number, boolean]= ["Mike", 10, 8, true]
+You have a real estate agent in a city that is divided into five sections. These sections are numbered (1 to 5). Each section is further divided into north, south, west, east, and center. Add a tuple named location to the house object, which always has two pieces of information - the section number and the designated area. This house will be in section 5 and in the southern area.
 
-const employee: {
-    name: string,
-    age: number,
-    hobbies: string[],
-    department: [number, string]
-} = {
-    name: "Mike",
-    age: 28,
-    hobbies: ["sport", "coding", "programming"],
-    department: [2, "software developer"]
+const house = {
+color: "white"
 }
 
-console.log(employee.department[0]);
-console.log(employee.department[1]);
+Write the tuple to the console using console.log and a for loop */
 
-for(const department of employee.department){
-console.log(department)}
+const house: {
+    color: string,
+    location: [number, string]
+} = {
+    color: "white",
+    location: [5, "south"]
+}
+
+console.log(house.location[0]);
+console.log(house.location[1]);
+
+
+for (const area of house.location){
+console.log(area)}
