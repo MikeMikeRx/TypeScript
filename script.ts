@@ -1,30 +1,28 @@
-// const windows = 4
-// const doors = 1
-// const color = "white"
-// const height = 50
-// const isNew = true
-// const garage = true
+// Array
 
+let employees: any[]
 
-/*
-Real estate office object
-Create an object called house that will contain all the variables listed above. Use the simplest possible notation (you don't need to specify which variable is which type)
+employees = ["Mike", "Dave", "Daniela", 8, true]
 
-List all properties to the console
-*/
+console.log(employees[0]);
+console.log(employees[1]);
+console.log(employees[2]);
 
-const house = {
-    windows: 4,
-    doors: 1,
-    color: "white",
-    height: 50,
-    isNew: true,
-    garage: true
+for (const oneEmployee of employees){
+    console.log(oneEmployee);   
 }
 
-console.log(house.windows);
-console.log(house.doors);
-console.log(house.color);
-console.log(house.height);
-console.log(house.isNew);
-console.log(house.garage);
+const person = {
+    firstName: "Michal",
+    secondName: "Rais",
+    age: 28,
+    hobbies: ["coding", "programming", "sport"]
+}
+
+console.log(person.hobbies[0]);
+console.log(person.hobbies[1]);
+console.log(person.hobbies[2]);
+
+for (const oneHobby of person.hobbies){
+    console.log(oneHobby);
+}
