@@ -1,22 +1,27 @@
-// Enum
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["AUTHOR"] = 1] = "AUTHOR";
-    Role[Role["READ_ONLY"] = 2] = "READ_ONLY";
-})(Role || (Role = {}));
-var employee = {
-    name: "Michal",
-    age: 28,
-    role: Role.ADMIN
-};
-console.log(employee.role);
-if (employee.role === 0) {
-    console.log("Admin rights");
+/*Real Estate Agency and House Condition
+
+You have the following object:
+
+const house = {
+color: "white"
 }
-/*
-Role:
-    0 - admin
-    1 - author
-    2 - read_only
-*/ 
+
+Outside the object, create an enum called HouseCondition and fill it with three values:
+habitable,
+normal,
+uninhabitable.
+
+Add a property condition to the house object and assign from the enum that it is uninhabitable.
+
+Print this property to the console using console.log. Note: only the numeric value will be printed. */
+var House_Condition;
+(function (House_Condition) {
+    House_Condition[House_Condition["HABITABLE"] = 0] = "HABITABLE";
+    House_Condition[House_Condition["NORMAL"] = 1] = "NORMAL";
+    House_Condition[House_Condition["UNINHABITABLE"] = 2] = "UNINHABITABLE";
+})(House_Condition || (House_Condition = {}));
+var house = {
+    color: "white",
+    contidition: House_Condition.UNINHABITABLE
+};
+console.log(house.contidition);

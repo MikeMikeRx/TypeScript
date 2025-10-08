@@ -1,22 +1,25 @@
-// Enum
+/*Real Estate Agency and House Condition
 
-enum Role {ADMIN, AUTHOR, READ_ONLY}
+You have the following object:
 
-const employee = {
-    name: "Michal",
-    age: 28,
-    role: Role.ADMIN
+const house = {
+color: "white"
 }
 
-console.log(employee.role)
+Outside the object, create an enum called HouseCondition and fill it with three values:
+habitable,
+normal,
+uninhabitable.
 
-if(employee.role === 0){
-    console.log("Admin rights");    
+Add a property condition to the house object and assign from the enum that it is uninhabitable.
+
+Print this property to the console using console.log. Note: only the numeric value will be printed. */
+
+enum House_Condition {HABITABLE, NORMAL, UNINHABITABLE}
+
+const house = {
+    color: "white",
+    contidition: House_Condition.UNINHABITABLE
 }
 
-/*
-Role:
-    0 - admin
-    1 - author
-    2 - read_only
-*/
+console.log(house.contidition);
