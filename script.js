@@ -1,17 +1,9 @@
-// Type inference
-/*Improved Real estate agency*/
-var windows = 4;
-var doors = 1;
-var color = "white";
-var height = 50;
-var isNew = true;
-var garage = true;
-var house = {
-    windows: windows,
-    doors: doors,
-    color: color,
-    height: height,
-    isNew: isNew,
-    garage: garage
+// Basic data types: Objects
+var person = {
+    name: "Michal",
+    age: 28,
+    adult: true
 };
-console.log(house);
+console.log(person.name);
+console.log(person.age);
+console.log(person.adult);

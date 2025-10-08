@@ -1,21 +1,15 @@
-// Type inference
+// Basic data types: Objects
 
-/*Improved Real estate agency*/
-
-const windows = 4
-const doors = 1
-const color = "white"
-const height = 50
-const isNew = true
-const garage = true
-
-const house = {
-    windows,
-    doors,
-    color,
-    height,
-    isNew,
-    garage
+const person: {
+    name: string,
+    age: number,
+    adult: boolean
+} = {
+    name: "Michal",
+    age: 28,
+    adult: true
 }
 
-console.log(house);
+console.log(person.name);
+console.log(person.age);
+console.log(person.adult);
