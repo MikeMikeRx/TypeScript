@@ -1,14 +1,20 @@
-// Function as a Type
-function sum(num1, num2) {
-    return num1 + num2;
+// Function as a Type - practice arrow functions
+//1.
+function test1(num1, num2, num3) {
+    return num1 + num2 + num3;
 }
-function test(description) {
+var myFunction1;
+//2.
+function test2(description) {
     return description;
 }
-var myNumber = 5;
-var myString = "Michal";
-// let myFunction: Function
-var myFunction;
-myFunction = sum;
-// myFunction = test
-console.log(myFunction(15, 25));
+var myFunction2;
+//3.
+function test3(myString, myNumber) {
+    return myString;
+}
+var myFunction3;
+//------------------------------------------------------------
+myFunction1 = test1;
+myFunction2 = test2;
+myFunction3 = test3;

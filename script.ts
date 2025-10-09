@@ -1,19 +1,30 @@
-// Function as a Type
+// Function as a Type - practice arrow functions
 
-function sum(num1: number, num2: number){
-    return num1 + num2
+//1.
+function test1(num1: number, num2: number, num3: number) {
+    return num1 + num2 + num3
 }
 
-function test(description: string){
-    return description   
+let myFunction1: (x: number, y: number, z:number) => number
+
+
+//2.
+function test2(description: string){
+    return description
 }
 
-let myNumber = 5
-let myString = "Michal"
+let myFunction2: (x: string) => string
 
-// let myFunction: Function
-let myFunction: (x: number, y: number) => number
-myFunction = sum
-// myFunction = test
 
-console.log(myFunction(15,25))
+//3.
+function test3(myString: string, myNumber: number){
+    return myString
+}
+
+
+let myFunction3: (x: string, y:number) => string
+
+//------------------------------------------------------------
+myFunction1 = test1
+myFunction2 = test2
+myFunction3 = test3
