@@ -1,15 +1,13 @@
-function combination(input1, input2, resultType) {
-    var result;
-    if (typeof (input1) === "number" && typeof (input2) === "number" || resultType === "as-number") {
-        result = +input1 + +input2;
-        return result;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-        return result;
-    }
+// Return and void
+function sum(n1, n2) {
+    return n1 + n2;
 }
-console.log(combination(4, 8, "as-number"));
-console.log(combination("Rais", "Michal", "as-text"));
-console.log(combination("10", "25", "as-number"));
-console.log(combination("10", 5, "as-number"));
+var result = sum(5, 4);
+function sum2(n1, n2) {
+    return n1.toString() + n2.toString();
+}
+//void
+function writeResult(num) {
+    console.log("Result: ".concat(num));
+}
+writeResult(15);

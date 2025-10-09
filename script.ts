@@ -1,19 +1,18 @@
-// Type alias / custom type
-type Combination = string | number
-type resultType = "as-number" | "as-text"
+// Return and void
 
-function combination (input1: Combination, input2: Combination, resultType: resultType){
-    let result: Combination
-    if(typeof(input1) === "number" && typeof(input2) === "number" || resultType === "as-number"){
-        result = +input1 + +input2
-        return result
-    } else {
-        result = input1.toString() + input2.toString()
-        return result
-    } 
+function sum(n1:number, n2:number): number {
+    return n1 + n2
 }
 
-console.log(combination(4, 8, "as-number"));
-console.log(combination("Rais", "Michal", "as-text"));
-console.log(combination("10", "25", "as-number"))
-console.log(combination("10", 5, "as-number"));
+const result = sum(5,4)
+
+function sum2(n1: number, n2: number): string{
+    return n1.toString() + n2.toString()
+}
+
+//void
+function writeResult(num: number){
+    console.log(`Result: ${num}`)
+}
+
+writeResult(15)
