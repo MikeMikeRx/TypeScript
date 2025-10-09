@@ -1,30 +1,13 @@
-// Function as a Type - practice arrow functions
+// Callback function
 
-//1.
-function test1(num1: number, num2: number, num3: number) {
-    return num1 + num2 + num3
+const y = (x: number) => console.log(x)
+
+y(10)
+y(50)
+
+function sum(n1: number,n2 :number, callBackFun: (n3: number) => void){
+    const result = n1 + n2
+    callBackFun(result)
 }
 
-let myFunction1: (x: number, y: number, z:number) => number
-
-
-//2.
-function test2(description: string){
-    return description
-}
-
-let myFunction2: (x: string) => string
-
-
-//3.
-function test3(myString: string, myNumber: number){
-    return myString
-}
-
-
-let myFunction3: (x: string, y:number) => string
-
-//------------------------------------------------------------
-myFunction1 = test1
-myFunction2 = test2
-myFunction3 = test3
+sum(5, 30, (x) => console.log(x))

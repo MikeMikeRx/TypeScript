@@ -1,20 +1,9 @@
-// Function as a Type - practice arrow functions
-//1.
-function test1(num1, num2, num3) {
-    return num1 + num2 + num3;
+// Callback function
+var y = function (x) { return console.log(x); };
+y(10);
+y(50);
+function sum(n1, n2, callBackFun) {
+    var result = n1 + n2;
+    callBackFun(result);
 }
-var myFunction1;
-//2.
-function test2(description) {
-    return description;
-}
-var myFunction2;
-//3.
-function test3(myString, myNumber) {
-    return myString;
-}
-var myFunction3;
-//------------------------------------------------------------
-myFunction1 = test1;
-myFunction2 = test2;
-myFunction3 = test3;
+sum(5, 30, function (x) { return console.log(x); });
