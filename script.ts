@@ -1,16 +1,24 @@
-// Union type
+// Literal type
 
-function combinationX (input1: string | number, input2: string | number){
+function combination (input1: string | number, input2: string | number, resultType: "as-number" | "as-text"){
     let result: number | string
-    if(typeof(input1) === "number" && typeof(input2) === "number"){
-        result = input1 + input2
+    if(typeof(input1) === "number" && typeof(input2) === "number" || resultType === "as-number"){
+        result = +input1 + +input2
         return result
     } else {
         result = input1.toString() + input2.toString()
         return result
     }
+
+    // if(resultType === "as-number"){
+    //     result = +result
+    //     return result
+    // } else {
+    //     return result.toLocaleString()
+    // }   
 }
 
-console.log(combinationX(5,6));
-console.log(combinationX("Michal", "Rais"));
-
+console.log(combination(5, 6, "as-number"));
+console.log(combination("Michal", "Rais", "as-text"));
+console.log(combination("10", "8", "as-number"))
+console.log(combination("10", 3, "as-number"));
