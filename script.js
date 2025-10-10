@@ -1,8 +1,8 @@
-// Unknown type
-var test;
-var result;
-test = 5;
-test = "Michal";
-if (typeof test === "string") {
-    result = test;
+// Never type
+function test(myValue) {
+    return myValue;
 }
+function generateError(errorText, errorNumber) {
+    throw { message: errorText, errorCode: errorNumber };
+}
+generateError("Fatal Error", 999);
