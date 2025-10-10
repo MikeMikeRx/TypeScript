@@ -1,9 +1,8 @@
-// Callback function
-var y = function (x) { return console.log(x); };
-y(10);
-y(50);
-function sum(n1, n2, callBackFun) {
-    var result = n1 + n2;
-    callBackFun(result);
+// Unknown type
+var test;
+var result;
+test = 5;
+test = "Michal";
+if (typeof test === "string") {
+    result = test;
 }
-sum(5, 30, function (x) { return console.log(x); });

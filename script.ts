@@ -1,13 +1,11 @@
-// Callback function
+// Unknown type
 
-const y = (x: number) => console.log(x)
+let test: unknown
+let result: string
 
-y(10)
-y(50)
+test = 5
+test = "Michal"
 
-function sum(n1: number,n2 :number, callBackFun: (n3: number) => void){
-    const result = n1 + n2
-    callBackFun(result)
+if(typeof test === "string"){
+    result = test 
 }
-
-sum(5, 30, (x) => console.log(x))
